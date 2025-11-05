@@ -203,10 +203,10 @@ src="https://www.facebook.com/tr?id=944218417170643&ev=PageView&noscript=1"
           const p = this.data.thumb && document.querySelector(this.data.thumb);
           const el = this.el;
 
-          setTimeout(() => {
-            const directButton = document.getElementById("start-button-id");
-            if (directButton) directButton.style.display = "none";
-          }, 30000);
+          // setTimeout(() => {
+          //  const directButton = document.getElementById("start-button-id");
+           // if (directButton) directButton.style.display = "none";
+          //}, 30000);
 
           if (p) {
             el.setAttribute("material", "src", p);
@@ -329,7 +329,7 @@ src="https://www.facebook.com/tr?id=944218417170643&ev=PageView&noscript=1"
 
     <script>
       (function () {
-        var SHOW_DELAY_MS = 25000; // 25 seconds
+       var SHOW_DELAY_MS = 3000; // 3 seconds
         function onReady() {
           var btn = document.getElementById("start-button-id");
           if (!btn) return;
